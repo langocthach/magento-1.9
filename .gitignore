@@ -1,0 +1,98 @@
+######################
+# Magento .gitignore #
+######################
+
+# Magento Core unnecessary files #
+##################################
+/errors/local.xml
+/index.php
+/install.php
+/mage
+/php.ini
+/php.ini.sample
+downloader/*
+includes/*
+pkginfo/*
+ 
+# Env, configuration and setup related files #
+##############################################
+/.htaccess
+app/etc/local.xml
+ 
+# var, and static assets #
+##########################
+media/*
+!/media/.htaccess
+!/media/customer/
+!/media/customer/.htaccess
+!/media/downloadable/
+!/media/downloadable/.htaccess
+var/*
+!var/.htaccess
+ 
+# Magmi files #
+###############
+magmi/state/*
+magmi/conf/*
+magmi/.htaccess
+ 
+# IDE files #
+#############
+.project
+.idea/*
+.buildpath
+.settings
+ 
+# System files #
+################
+.*~
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+ 
+# Logs and databases #
+######################
+*.log
+*.sql
+*.sqlite
+ 
+# Redis dump #
+##############
+dump.rdb
+ 
+# Sass files #
+##############
+**/.sass-cache/
+ 
+# Node and node-related files #
+###############################
+package.json
+gulpfile.js
+node_modules/*
+ 
+# Project specific files #
+##########################
+_utils/bdd/*
+_utils/_gitignored/*
+.modman
+/feeds
+/*.tar
+/*.bz2
+/*.rdb
+/*.xml
+nohup.out
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+*.swp
